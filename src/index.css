@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --black: #000;
+    --black2: #050405;
+    --dark: #17181b;
+    --dark2: #202124;
+    --dark3: #323246;
+    --dark-grey: #637381;
+    --grey: #667085;
+    --grey2: #919eab;
+    --light-grey: #96b3cd;
+    --light: #cdcddd;
+    --blue: #564fb1;
+
+    --white: #fff;
+}
+
+body {
+    font-family: 'Sen', sans-serif;
 }
