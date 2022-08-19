@@ -1,0 +1,84 @@
+.footer {
+    padding: 80px 10em 20px;
+    background-color: var(--dark);
+}
+
+.footer > img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.footer > div {
+    margin: 30px 0;
+    color: var(--dark-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 1.3fr repeat(3, 1fr);
+    grid-column-gap: 80px;
+}
+
+.infoGrid > div > span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white);
+}
+
+.infoGrid > div > p {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.infoGrid > div > p > svg {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.infoGrid > div > p > svg:hover {
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.infoFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoFlex > div > span {
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .footer {
+        padding: 60px 2em 20px;
+    }
+
+    .footer > img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .infoGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .infoGrid > div {
+        text-align: center;
+    }
+
+    .infoFlex {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .infoFlex > div {
+        margin-top: 10px;
+    }
+}
