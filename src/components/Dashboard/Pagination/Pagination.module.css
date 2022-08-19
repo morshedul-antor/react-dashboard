@@ -1,0 +1,52 @@
+.pagination {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.pagination > div {
+    color: var(--dark-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.pagination > div > svg {
+    transform: rotate(90deg);
+    padding: 0 10px;
+}
+
+.pagination > div > span {
+    padding: 0 20px;
+}
+
+.pagination > div > .active {
+    background-color: var(--dark);
+    padding: 12px 16px;
+    color: var(--white);
+    border-radius: 50%;
+}
+
+.pagination > div > span:hover {
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+@media (max-width: 420px) {
+    .pagination {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    .pagination > div > span {
+        padding: 0 10px;
+    }
+
+    .pagination > div > span:nth-child(3),
+    .pagination > div > span:nth-child(5),
+    .pagination > div > span:nth-child(6) {
+        display: none;
+    }
+}
