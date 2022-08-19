@@ -1,0 +1,83 @@
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 20px 0;
+}
+
+.card > div {
+    background-color: var(--dark);
+    color: var(--dark-grey);
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.card > div > img {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 50%;
+    border-radius: 50%;
+}
+
+.card > div > h2 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--white);
+}
+
+.card > div > p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card > div > p > svg {
+    padding-right: 10px;
+}
+
+.card > div > p:nth-child(5) > svg {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card > div > p:nth-child(5) > svg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info > p {
+    padding: 10px 10px;
+    border: 0.1px dashed var(--dark-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.info > p > span {
+    display: block;
+    color: var(--light-grey);
+}
+
+@media (max-width: 420px) {
+    .card {
+        margin-top: -20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}
