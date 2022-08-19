@@ -1,0 +1,74 @@
+.search {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 40px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search > p {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.search > div > input {
+    background-color: var(--dark2);
+    border: 1px solid var(--dark3);
+    padding: 16px;
+    width: 44vw;
+    border-radius: 4px;
+    color: var(--white);
+    outline: none;
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.search > div > input::placeholder {
+    color: var(--dark-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.search > div > span > svg {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 16px;
+    color: var(--dark-grey);
+    font-size: 16px;
+}
+
+.button {
+    padding: 16px;
+    border-radius: 4px;
+    background-color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 200ms;
+}
+
+@media (max-width: 420px) {
+    .search {
+        margin-top: 4px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search > div > input {
+        width: 80vw;
+    }
+}
