@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    padding: 0 10em;
+    z-index: 10;
+}
+
+.navbar > img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar > div > span {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    color: var(--dark-grey);
+    font-style: normal;
+}
+
+.navbar > div > span:hover {
+    color: var(--white);
+    transition: 200ms;
+}
+
+.navbar > div > .active {
+    background-color: var(--dark2);
+    margin-right: 20px;
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.navbar > div > .active:hover {
+    opacity: 0.9;
+    transition: 200ms;
+}
+
+.navbar > div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div:last-child > img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.navbar > div:last-child > svg {
+    padding: 0 8px;
+    color: var(--dark-grey);
+    cursor: pointer;
+}
+
+.navbar > div:last-child > svg:hover {
+    color: var(--white);
+    transition: 200ms;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        padding: 0 1em;
+    }
+
+    .navbar > div:nth-child(2) {
+        display: none;
+    }
+
+    .navbar > div:nth-child(3) > span {
+        display: none;
+    }
+
+    .navbar > div:last-child > img {
+        margin: 0 10px;
+    }
+
+    .menu {
+        display: block;
+    }
+}
