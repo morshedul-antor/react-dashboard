@@ -1,0 +1,10 @@
+.dashboard {
+    padding: 20px 10em;
+    background-color: var(--black);
+}
+
+@media (max-width: 420px) {
+    .dashboard {
+        padding: 10px 1em;
+    }
+}
