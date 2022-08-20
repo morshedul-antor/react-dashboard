@@ -5,7 +5,6 @@
     "rules": {
         "no-console": "warn",
         "prettier/prettier": ["warn", { "printWidth": 120 }],
-        "react/react-in-jsx-scope": "off",
-        "endOfline": "auto"
+        "react/react-in-jsx-scope": "off"
     }
 }
