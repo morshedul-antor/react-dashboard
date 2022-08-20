@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-:root {
+:root,
+:root.dark {
     --black: #000;
     --black2: #050405;
     --dark: #17181b;
@@ -20,6 +21,10 @@
     --blue: #564fb1;
 
     --white: #fff;
+}
+
+:root.light {
+    --black: #fff;
 }
 
 body {

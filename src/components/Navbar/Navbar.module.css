@@ -16,7 +16,7 @@
 }
 
 .navbar > div > span {
-    padding: 0 20px;
+    padding: 0 20px 0 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -56,15 +56,45 @@
     border-radius: 4px;
 }
 
-.navbar > div:last-child > svg {
+.navbar > div:last-child > svg,
+.navbar > div:last-child > div > svg {
     padding: 0 8px;
     color: var(--dark-grey);
     cursor: pointer;
 }
 
-.navbar > div:last-child > svg:hover {
+.navbar > div:last-child > svg:hover,
+.navbar > div:last-child > div > svg:hover {
     color: var(--white);
     transition: 200ms;
+}
+
+.themeToggle {
+    background-color: var(--white);
+    position: absolute;
+    margin-top: 0px;
+    border-radius: 4px;
+    display: none;
+}
+
+.themeToggle > p {
+    padding: 10px 14px;
+}
+
+.themeToggle > p:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 200ms;
+    background-color: var(--light);
+    border-radius: 4px;
+}
+
+.themeToggle > p > svg {
+    padding-right: 10px;
+}
+
+.navbar > div:last-child > div:hover > .themeToggle {
+    display: block;
 }
 
 .menu {
