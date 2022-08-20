@@ -1,6 +1,16 @@
 .footer {
     padding: 80px 10em 20px;
-    background-color: var(--dark);
+    background-color: var(--primary);
+}
+
+.footer > p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.footer > p > svg {
+    padding-right: 10px;
 }
 
 .footer > img {
@@ -10,7 +20,7 @@
 
 .footer > div {
     margin: 30px 0;
-    color: var(--dark-grey);
+    color: var(--secondary-text);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -26,7 +36,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    color: var(--white);
+    color: var(--primary-text);
 }
 
 .infoGrid > div > p {
@@ -37,6 +47,7 @@
 .infoGrid > div > p > svg {
     padding: 10px;
     font-size: 16px;
+    color: var(--secondary);
 }
 
 .infoGrid > div > p > svg:hover {
@@ -52,6 +63,11 @@
 .infoFlex > div > span {
     padding-left: 24px;
     cursor: pointer;
+}
+
+.infoFlex > div:first-child > span {
+    font-weight: 700;
+    color: var(--secondary);
 }
 
 @media (max-width: 420px) {

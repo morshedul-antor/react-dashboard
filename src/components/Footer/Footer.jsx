@@ -1,12 +1,15 @@
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import logo from '../../assets/logo.png'
 import classes from './Footer.module.css'
 
 export default function Footer() {
     return (
         <div className={classes.footer}>
-            <img src={logo} alt="" />
+            <p>
+                <FontAwesomeIcon icon={faChartSimple} />
+                hypescout
+            </p>
             <div className={classes.infoGrid}>
                 <div>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores animi magnam placeat accusantium
@@ -38,7 +41,9 @@ export default function Footer() {
                 </div>
             </div>
             <div className={classes.infoFlex}>
-                <div>&#169; Hypescout 2022. All rights reserved</div>
+                <div>
+                    <span>&#169; Hypescout 2022.</span> All rights reserved
+                </div>
                 <div>
                     <span>Terms & Conditions</span>
                     <span>Privacy</span>

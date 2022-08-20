@@ -7,8 +7,7 @@
 }
 
 .card > div {
-    background-color: var(--dark);
-    color: var(--dark-grey);
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 50px;
     text-align: center;
@@ -29,7 +28,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: var(--white);
+    color: var(--primary-text);
 }
 
 .card > div > p {
@@ -37,6 +36,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    color: var(--secondary);
 }
 
 .card > div > p > svg {
@@ -46,6 +46,7 @@
 .card > div > p:nth-child(5) > svg {
     padding: 10px;
     margin-bottom: 10px;
+    color: var(--secondary2);
 }
 
 .card > div > p:nth-child(5) > svg:hover {
@@ -62,8 +63,9 @@
 }
 
 .info > p {
+    color: var(--secondary);
     padding: 10px 10px;
-    border: 0.1px dashed var(--dark-grey);
+    border: 0.1px dashed var(--grey);
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -71,7 +73,7 @@
 
 .info > p > span {
     display: block;
-    color: var(--light-grey);
+    color: var(--secondary3);
 }
 
 @media (max-width: 420px) {

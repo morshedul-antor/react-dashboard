@@ -2,12 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--dark);
+    background-color: var(--primary);
     height: 80px;
     position: sticky;
     top: 0;
     padding: 0 10em;
     z-index: 10;
+}
+
+.navbar > p {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.navbar > p > svg {
+    padding-right: 10px;
 }
 
 .navbar > img {
@@ -21,13 +31,12 @@
     font-size: 14px;
     line-height: 17px;
     cursor: pointer;
-    color: var(--dark-grey);
+    color: var(--secondary);
     font-style: normal;
 }
 
 .navbar > div > span:hover {
-    color: var(--white);
-    transition: 200ms;
+    opacity: 0.8;
 }
 
 .navbar > div > .active {
@@ -59,18 +68,18 @@
 .navbar > div:last-child > svg,
 .navbar > div:last-child > div > svg {
     padding: 0 8px;
-    color: var(--dark-grey);
+    color: var(--secondary);
     cursor: pointer;
 }
 
 .navbar > div:last-child > svg:hover,
 .navbar > div:last-child > div > svg:hover {
-    color: var(--white);
+    color: var(--primary-text);
     transition: 200ms;
 }
 
 .themeToggle {
-    background-color: var(--white);
+    background-color: var(--background2);
     position: absolute;
     margin-top: 0px;
     border-radius: 4px;
@@ -79,6 +88,7 @@
 
 .themeToggle > p {
     padding: 10px 14px;
+    color: var(--primary-text);
 }
 
 .themeToggle > p:hover {

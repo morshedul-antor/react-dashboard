@@ -1,6 +1,6 @@
 .dashboard {
     padding: 20px 10em;
-    background-color: var(--black);
+    background-color: var(--background);
 }
 
 @media (max-width: 420px) {

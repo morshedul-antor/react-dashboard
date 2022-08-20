@@ -1,8 +1,7 @@
-import { faBars, faBell, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBell, faChartSimple, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import cr7 from '../../assets/cr7.jpg'
-import logo from '../../assets/logo.png'
 import classes from './Navbar.module.css'
 
 export default function Navbar() {
@@ -18,7 +17,10 @@ export default function Navbar() {
 
     return (
         <div className={classes.navbar}>
-            <img src={logo} alt="" />
+            <p>
+                <FontAwesomeIcon icon={faChartSimple} />
+                hypescout
+            </p>
             <div>
                 <span className={classes.active}>Dashboard</span>
                 <span>Campaign</span>
@@ -32,19 +34,19 @@ export default function Navbar() {
                     <div className={classes.themeToggle}>
                         <p
                             onClick={() => {
-                                toggleDark()
-                                setSelect(1)
-                            }}>
-                            <FontAwesomeIcon icon={faMoon} />
-                            Dark
-                        </p>
-                        <p
-                            onClick={() => {
                                 toggleLight()
                                 setSelect(2)
                             }}>
                             <FontAwesomeIcon icon={faSun} />
                             Light
+                        </p>
+                        <p
+                            onClick={() => {
+                                toggleDark()
+                                setSelect(1)
+                            }}>
+                            <FontAwesomeIcon icon={faMoon} />
+                            Dark
                         </p>
                     </div>
                 </div>

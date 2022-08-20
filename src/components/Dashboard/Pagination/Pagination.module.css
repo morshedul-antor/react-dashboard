@@ -6,7 +6,7 @@
 }
 
 .pagination > div {
-    color: var(--dark-grey);
+    color: var(--secondary);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
