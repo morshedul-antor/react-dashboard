@@ -1,0 +1,166 @@
+.filter {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.filter > .cross {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 40px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.filter > .cross:hover {
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.form {
+    position: absolute;
+    top: 13em;
+    right: 12.8em;
+    width: 300px;
+    border-radius: 2px;
+    padding: 20px 0;
+    background-color: var(--primary);
+
+    overflow-y: auto;
+    height: 70vh;
+    scrollbar-width: thin;
+}
+
+.form > .close {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    font-size: 26px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.form > .close:hover {
+    opacity: 0.8;
+    transition: 200ms;
+}
+
+.form > p {
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--secondary);
+    padding: 0 20px;
+    padding-bottom: 20px;
+    color: var(--primary-text);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.field {
+    margin-top: 10px;
+    margin-left: 14px;
+    overflow: hidden;
+}
+
+.field > label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--primary-text);
+}
+
+.field > input[type='range'] {
+    width: 260px;
+}
+
+.field > span {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-text);
+    padding: 0 50px 0 10px;
+}
+
+.field > select {
+    display: block;
+    background-color: var(--background);
+    color: var(--secondary);
+    font-size: 14px;
+    width: 260px;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding-left: 6px;
+}
+
+.field > select > option {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.field > p {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.field > p > span {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.form > div:last-child {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4px;
+}
+
+.form > div > button {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 6px;
+}
+
+.form > div > button:first-child {
+    background-color: var(--background);
+    color: var(--secondary);
+}
+
+.form > div > button:last-child {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.form > div > button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+@media (max-width: 420px) {
+    .filter > .cross {
+        top: 90px;
+        right: 30px;
+    }
+
+    .form {
+        top: 60%;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+    }
+
+    .form > p {
+        margin-top: 10px;
+    }
+}
