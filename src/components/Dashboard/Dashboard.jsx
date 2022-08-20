@@ -18,8 +18,8 @@ export default function Dashboard() {
                 })
                 const data = await response.json()
                 setUsers(data)
-            } catch (e) {
-                console.error(e)
+            } catch {
+                setUsers([])
             }
         }
         fetchData()
