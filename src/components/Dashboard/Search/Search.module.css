@@ -2,7 +2,7 @@
     position: relative;
     margin: 20px 0;
     padding: 20px 40px;
-    background-color: var(--dark);
+    background-color: var(--primary);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -10,19 +10,19 @@
 }
 
 .search > p {
-    color: var(--white);
+    color: var(--primary-text);
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
 }
 
 .search > div > input {
-    background-color: var(--dark2);
-    border: 1px solid var(--dark3);
+    background-color: var(--background2);
+    border: 1px solid var(--background-border);
+    color: var(--primary-text);
     padding: 16px;
     width: 44vw;
     border-radius: 4px;
-    color: var(--white);
     outline: none;
     padding-left: 40px;
     font-weight: 700;
@@ -31,18 +31,19 @@
 }
 
 .search > div > input::placeholder {
-    color: var(--dark-grey);
+    color: var(--secondary);
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    opacity: 0.5;
 }
 
 .search > div > span > svg {
     position: absolute;
-    margin-top: 16px;
+    margin-top: 18px;
     margin-left: 16px;
-    color: var(--dark-grey);
-    font-size: 16px;
+    color: var(--secondary);
+    font-size: 18px;
 }
 
 .button {
