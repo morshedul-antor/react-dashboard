@@ -8,23 +8,38 @@
 
 :root,
 :root.dark {
-    --black: #000;
+    --background: #000;
+    --background2: #202124;
     --black2: #050405;
+    --primary: #17181b;
+    --secondary: #637381;
+    --secondary2: #637381;
+    --secondary3: #96b3cd;
+
+    --blue: #564fb1;
     --dark: #17181b;
     --dark2: #202124;
-    --dark3: #323246;
-    --dark-grey: #637381;
-    --grey: #667085;
-    --grey2: #919eab;
-    --light-grey: #96b3cd;
-    --light: #cdcddd;
-    --blue: #564fb1;
-
+    --grey: #637381;
+    --light: #9e9e9e;
+    --red: rgb(190, 20, 20);
     --white: #fff;
+
+    --background-border: #323246;
+    --primary-text: #fff;
+    --secondary-text: #637381;
 }
 
 :root.light {
-    --black: #fff;
+    --background: #fff;
+    --background2: #fff;
+    --primary: #f7f7f7;
+    --secondary: #231f20;
+    --secondary2: #564fb1;
+    --secondary3: #564fb1;
+
+    --background-border: #dbdbdb;
+    --primary-text: #231f20;
+    --secondary-text: #637381;
 }
 
 body {
