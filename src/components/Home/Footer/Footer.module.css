@@ -1,0 +1,14 @@
+.footer > span {
+  color: var(--secondary);
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  right: 1em;
+  bottom: 2.6%;
+}
+
+@media (max-width: 420px) {
+  .footer > span {
+    font-size: 10px;
+  }
+}
