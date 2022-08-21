@@ -7,6 +7,8 @@ import Search from './Search/Search'
 export default function Dashboard() {
     const [users, setUsers] = useState([])
     const [search, setSearch] = useState('')
+    const [range, setRange] = useState(700)
+    const [gender, setGender] = useState('Male')
 
     const api = process.env.REACT_APP_API_URL
 
@@ -27,8 +29,8 @@ export default function Dashboard() {
 
     return (
         <div className={classes.dashboard}>
-            <Search search={search} setSearch={setSearch} />
-            <ProfileCard users={users} search={search} />
+            <Search search={search} setSearch={setSearch} range={range} setRange={setRange} setGender={setGender} />
+            <ProfileCard users={users} search={search} range={range} gender={gender} />
             <Pagination />
         </div>
     )

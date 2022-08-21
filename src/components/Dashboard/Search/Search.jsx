@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Filter from './Filter/Filter'
 import classes from './Search.module.css'
 
-export default function Search({ search, setSearch }) {
+export default function Search({ search, setSearch, range, setRange, setGender }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -24,7 +24,7 @@ export default function Search({ search, setSearch }) {
             <div className={classes.button} onClick={() => setIsOpen(true)}>
                 <FontAwesomeIcon icon={faFilter} /> <span>Advance Filter</span>
             </div>
-            {isOpen && <Filter setIsOpen={setIsOpen} />}
+            {isOpen && <Filter setIsOpen={setIsOpen} range={range} setRange={setRange} setGender={setGender} />}
         </div>
     )
 }

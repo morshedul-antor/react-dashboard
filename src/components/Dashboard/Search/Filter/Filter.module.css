@@ -76,6 +76,10 @@
     color: var(--primary-text);
 }
 
+.field > input {
+    cursor: pointer;
+}
+
 .field > input[type='range'] {
     width: 260px;
 }

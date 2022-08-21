@@ -1,6 +1,6 @@
 import classes from './Filter.module.css'
 
-export default function Filter({ setIsOpen }) {
+export default function Filter({ setIsOpen, range, setRange, setGender }) {
     return (
         <div className={classes.filter}>
             <div className={classes.cross} onClick={() => setIsOpen(false)}>
@@ -39,23 +39,31 @@ export default function Filter({ setIsOpen }) {
                     </select>
                     <br />
                     <label>Influencer’s Social Media Platform</label>
-                    <input type="range" />
+                    <input type="range" value={range} onChange={(e) => setRange(e.target.value)} min={400} max={800} />
                     <p>
-                        <span>100k</span>
-                        <span>200k</span>
-                        <span>250k</span>
+                        <span>400k</span>
                         <span>500k</span>
+                        <span>600k</span>
                         <span>700k</span>
+                        <span>800k</span>
                     </p>
                     <br />
                     <br />
                     <label>Influencer’s Gender</label>
-                    <input type="radio" /> <span>Male</span>
-                    <input type="radio" /> <span>Female</span>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        checked="checked"
+                        onChange={(e) => setGender(e.target.value)}
+                    />
+                    <span>Male</span>
+                    <input type="radio" name="gender" value="Female" onChange={(e) => setGender(e.target.value)} />
+                    <span>Female</span>
                 </div>
 
                 <div>
-                    <button>Reset</button>
+                    <button onClick={() => setRange(700)}>Reset</button>
                     <button>Apply</button>
                 </div>
             </div>
