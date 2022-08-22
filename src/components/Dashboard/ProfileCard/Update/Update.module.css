@@ -128,6 +128,11 @@
         grid-gap: 0px;
     }
 
+    .containerPopup > .cross {
+        top: 0px;
+        right: 10px;
+    }
+
     .container {
         overflow: auto;
     }
@@ -135,8 +140,6 @@
     .formWrapper {
         width: 18em;
         padding: 30px 20px;
-        box-shadow: 1px 1px var(--light-low);
-        background-color: var(--light);
     }
 
     .formWrapper .close {
